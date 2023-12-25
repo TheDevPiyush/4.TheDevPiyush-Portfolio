@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+@media (width > 1000px) {
+
+
+    .mainContainer {
+        height: 100vh;
+        width: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-y: auto;
+        overflow-x: hidden;
+        color: white;
+    }
+
+    .iconContainer {
+        margin-top: 30%;
+        text-align: center;
+    }
+
+    .themesContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: smaller;
+        border-bottom: 1px solid grey;
+        margin-bottom: 30%;
+    }
+
+    .icons {
+        /* gap: 40px; */
+        cursor: pointer;
+        padding: 15px;
+        margin: 5px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: larger;
+
+    }
+
+    .icons:hover {
+        background-color: rgb(39, 39, 39);
+
+    }
+
+    .icons:active {
+        background-color: rgb(70, 70, 70);
+    }
+    .selected{
+        background-color: rgb(70, 70, 70);
+        font-size: x-large;
+
+    }
+}
