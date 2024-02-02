@@ -1,58 +1,36 @@
-import React, { Component } from 'react'
 import '../Styles/Navbar.css'
-import { BrowserRouter, Link } from 'react-router-dom'
-export default class Navbar extends Component {
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-    constructor(props) {
-        super(props)
+const Navbar = () => {
+    const [selectedButton, setSelectedButton] = useState("home");
+    const location = useLocation();
 
-        this.state = {
-            selected: "home"
-        }
-    }
-    componentDidMount(){
-        this.selectedFunc("home");
-    }
-    selectedFunc = (a) => {
-        document.getElementById("home").classList.remove("selected")
-        document.getElementById("about").classList.remove("selected")
-        document.getElementById("projects").classList.remove("selected")
-        document.getElementById("contact").classList.remove("selected")
-        document.getElementById(a).classList.add("selected")
+    useEffect(() => {
+        const route = location.pathname.substring(1);
+        setSelectedButton(route || "home");
+    }, [location.pathname]);
 
-    }
-    render() {
-        return (
-            <>
-                <div className="mainContainer">
-
-                    <div className="iconContainer">
-
-                        <div className="themesContainer">
-                            <i className="fas fa-moon icons"></i>
-                        </div>
-
-                        <Link to="/">
-                            <i id='home' onClick={
-                                () => { this.selectedFunc("home") }} className="fa-solid fa-house icons home"></i>
-                        </Link>
-                        <Link to='/about'>
-                            <i id='about' onClick={
-                                () => { this.selectedFunc("about") }} className="fa-regular fa-id-card icons about"></i>
-                        </Link>
-                        <Link to='/projects'>
-                            <i id='projects' onClick={
-                                () => { this.selectedFunc("projects") }} className="fa fa-puzzle-piece icons projects" aria-hidden="true"></i>
-                        </Link>
-
-                        <Link to="/contact">
-                            <i id='contact' onClick={
-                                () => { this.selectedFunc("contact") }} className="fa-solid fa-comments icons contact"></i>
-                        </Link>
-                    </div>
-
+    return (
+        <>
+            <div id='mainContainer' className="mainContainer">
+                <div className="iconContainer">
+                    <Link to="/">
+                        <i id='home' className={` fa-house icons home ${selectedButton === "home" ? "fa-solid" : "fa-regular"}`}></i>
+                    </Link>
+                    <Link to='/about'>
+                        <i id='about' className={`fa-id-card icons about ${selectedButton === "about" ? "fa-solid" : "fa-regular"}`}></i>
+                    </Link>
+                    <Link to='/projects'>
+                        <i id='projects' className={`fa-puzzle-piece icons projects ${selectedButton === "projects" ? "fa-solid" : "fa-regular"}`}></i>
+                    </Link>
+                    <Link to="/contact">
+                        <i id='contact' className={`fa-comments icons contact ${selectedButton === "contact" ? "fa-solid" : "fa-regular"}`}></i>
+                    </Link>
                 </div>
-            </>
-        )
-    }
-}
+            </div>
+        </>
+    );
+};
+
+export default Navbar;

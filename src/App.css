@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+@media (width > 1000px) {
+    .box {
+        display: flex;
+        justify-content: first baseline;
+        height: 100svh;
+
+    }
+    
+
+    .pages {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        word-break: break-all;
+
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: color 1s;
+    transition: background-color 1s;
+    background-color: rgb(19, 17, 25);
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    word-spacing: 2px;
+
+}
+
+.parent {
+    animation: fadeInAnimation ease-in-out 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: currentColor;
+}

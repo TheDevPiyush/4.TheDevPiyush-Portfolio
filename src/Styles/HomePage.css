@@ -1,0 +1,126 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-curve {
+    --mask:
+        radial-gradient(57.88px at 50% calc(100% - 79.50px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(57.88px at 50% calc(100% + 49.50px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+
+    text-align: center;
+    -webkit-mask: var(--mask, --mask2);
+    mask: var(--mask);
+    mask: var(--mask);
+    width: 99vw;
+    min-height: 40vh;
+    background: rgb(63, 94, 251);
+    background: linear-gradient(34deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+
+
+    flex-wrap: wrap;
+    padding-bottom: 1.5em;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.subtitle {
+    font-size: medium;
+    color: rgb(237, 237, 237);
+}
+
+.brief-curve {
+    background: rgb(251, 63, 63);
+    background: linear-gradient(85deg, rgb(239, 59, 59) 0%, rgb(227, 151, 75) 100%);
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    width: 100%;
+    --mask:
+        radial-gradient(67.08px at 50% 90.00px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+        radial-gradient(67.08px at 50% calc(100% - 90.00px), #000 99%, #0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+        radial-gradient(67.08px at 50% calc(100% + 60.00px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    font-weight: bold;
+    padding-bottom: 1.5em;
+
+}
+
+.cardContainer {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+}
+
+.techTitle {
+    font-size: 1.5em;
+    margin-left: .5em;
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+}
+
+.techDetails {
+    margin: .5em;
+    font-size: .8em;
+    word-wrap: break-all;
+    border-radius: 20px;
+    padding-bottom: 1.3em;
+}
+
+.detailCard {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 1.5em 1em 2em 1em;
+    border-radius: 1.3em;
+    box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.4);
+}
+
+.big {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 0 0 .5em 0;
+}
+
+.line {
+    border: 1px solid transparent;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.exitCurve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 337px;
+    max-height: max-content;
+    max-width: 450px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    overflow: hidden;
+    padding: 1.4em;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background: rgb(63, 251, 179);
+    background: linear-gradient(51deg, rgba(63, 251, 179, 1) 0%, rgba(113, 82, 255, 1) 100%);
+    box-shadow: 0 0 35px 8px rgba(25, 255, 255, 0.4);
+
+}
+
+.upper {
+    margin-bottom: 5em;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

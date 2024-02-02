@@ -1,14 +1,9 @@
-body {
-    margin: 0;
-    padding: 0;
-    color: white;
-    background-color: black;
-}
+/*            --------------------------- Desktop Version Of Navbar Below -------------------               */
 
 @media (width > 1000px) {
 
-
     .mainContainer {
+
         height: 100vh;
         width: 5vw;
         display: flex;
@@ -17,45 +12,108 @@ body {
         justify-content: flex-start;
         overflow-y: auto;
         overflow-x: hidden;
-        color: white;
     }
 
     .iconContainer {
-        margin-top: 30%;
+        margin-top: 130%;
         text-align: center;
+        font-size: large;
+
     }
 
     .themesContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: smaller;
-        border-bottom: 1px solid grey;
-        margin-bottom: 30%;
+        /* position: absolute; */
+        top: 0;
+        font-size: large;
+        transition: scale 0.3s ease-in-out;
+    }
+
+    .themesContainer:active {
+        scale: 1.8;
     }
 
     .icons {
-        /* gap: 40px; */
         cursor: pointer;
         padding: 15px;
-        margin: 5px;
+        margin: 10px;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        font-size: larger;
-
-    }
-
-    .icons:hover {
-        background-color: rgb(39, 39, 39);
-
+        transition: background-color 0.4s ease-out;
+        transition: scale 0.3s ease-out;
     }
 
     .icons:active {
-        background-color: rgb(70, 70, 70);
+        scale: 1.8;
     }
-    .selected{
-        background-color: rgb(70, 70, 70);
-        font-size: x-large;
+
+}
+
+/*            --------------------------- Mobile Version Of Navbar Below -------------------               */
+
+@media (width < 1000px) {
+    .mainContainer {
+        z-index: 99;
+        height: max-content;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        overflow-y: auto;
+        background: rgb(40, 38, 44);
+        background: linear-gradient(180deg, rgba(40, 38, 44, 0) 0%, rgba(40, 38, 44, 0.5222312435716474) 26%, rgba(40, 38, 44, 0.6734917477733281) 48%, rgba(40, 38, 44, 1) 83%);
+        overflow-x: auto;
+        /* backdrop-filter: blur(20px); */
+        border-radius: 3px;
+    }
+
+    .themesContainer {
+        font-size: large;
+        transition: scale 0.3s ease-out;
+
 
     }
+
+    .iconContainer {
+        width: 100;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.45rem;
+
+    }
+
+    .selectedBorder {
+        border: 2px solid transparent;
+    }
+
+    .icons {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.4s ease-out;
+        transition: scale 0.3s ease-out;
+    }
+
+    .icons:active {
+        scale: 1.8;
+    }
+
+    .themesContainer:active {
+        scale: 1.8;
+    }
+}
+
+
+/* -------------------------------------------------Common Version-------------------------------------------*/
+
+.mainContainer {
+    border-radius: 5px;
 }
