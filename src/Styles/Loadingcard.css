@@ -1,4 +1,4 @@
-.main {
+.mainLoading {
     height: 350px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
@@ -8,15 +8,39 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    animation: load 5s ease-in-out infinite forwards;
     align-items: flex-start;
 }
 
-.main:hover {
-    background-color: rgba(228, 228, 228, 0.5);
+@keyframes load {
+    0% {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    40% {
+        background-color: rgba(124, 124, 124, 0.5);
+
+    }
+
+    60% {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    80% {
+        background-color: rgba(124, 124, 124, 0.5);
+
+
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.5);
+
+
+    }
 
 }
 
-.cardTitle {
+.cardTitleLoading {
     font-size: x-large;
     font-weight: bolder;
     width: 100%;
@@ -26,7 +50,7 @@
     text-overflow: ellipsis;
 }
 
-.cardBody {
+.cardBodyLoading {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -38,34 +62,4 @@
     background-color: rgba(0, 0, 0, 0.05);
     padding: 1em;
     border-radius: 1.4em;
-    word-wrap: break-all;
-    word-break: break-all;
-}
-
-
-.cardButtonContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 2.5em;
-}
-
-.cardButton {
-    background: rgb(98, 42, 214);
-    background: linear-gradient(180deg, rgba(98, 42, 214, 1) 0%, rgba(143, 54, 185, 1) 100%);
-    font-size: 1.1em;
-    border-radius: 25px;
-    cursor: pointer;
-    user-select: none;
-    padding: .8em;
-    width: max-content;
-}
-
-.cardButton:hover {
-    opacity: 0.8;
-}
-
-.cardButton:active {
-    opacity: 1;
 }
