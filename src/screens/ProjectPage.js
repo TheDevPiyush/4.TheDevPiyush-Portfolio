@@ -44,7 +44,7 @@ export default function ProjectPage() {
         :
         <div className="projectContainer">
           {Repositories.map((ele) => (
-            <Card key={ele.id} title={ele.name} body={ele.description} button={"Know More"} />
+            <Card key={ele.id} projectId={ele.id} title={ele.name} body={ele.description} button={"Know More"} />
           ))}
         </div>
       }

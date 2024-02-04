@@ -7,6 +7,7 @@ import ContactPage from './screens/ContactPage'
 import ProjectPage from './screens/ProjectPage'
 import './App.css'
 import Error404 from './screens/Error404'
+import ProjectDetails from './screens/ProjectDetails'
 export default class App extends Component {
 
     render() {
@@ -26,6 +27,7 @@ export default class App extends Component {
                                     <Route exact path="/home" element={<HomePage />} />
                                     <Route exact path="/about" element={<AboutPage />} />
                                     <Route exact path="/projects" element={<ProjectPage />} />
+                                    <Route path="/projects/:projectId" element={<ProjectDetails />} />
                                     <Route exact path="/contact" element={<ContactPage />} />
                                     <Route exact path='*' element={<Error404 />} />
                                 </Routes>

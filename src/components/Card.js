@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Styles/card.css'
+import { Link } from 'react-router-dom'
 export default function Card(props) {
     return (
         <div className="main">
@@ -11,9 +12,11 @@ export default function Card(props) {
             </div>
 
             <div className="cardButtonContainer">
-                <div className="cardButton">
-                    {props.button}
-                </div>
+                <Link to={`/projects/${props.projectId}`}>
+                    <div className="cardButton">
+                        {props.button}
+                    </div>
+                </Link>
             </div>
 
         </div>
