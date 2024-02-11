@@ -1,8 +1,8 @@
 .main {
-    height: 350px;
-    background-color: rgba(255, 255, 255, 0.5);
+    height: 370px;
+    background-color: rgba(255, 255, 255, 0.416);
     backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.336);
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.374);
     border-radius: 20px;
     padding: .5em;
     display: flex;
@@ -12,7 +12,7 @@
 }
 
 .main:hover {
-    background-color: rgba(228, 228, 228, 0.5);
+    background-color: rgba(228, 228, 228, 0.402);
 
 }
 
@@ -20,7 +20,7 @@
     font-size: x-large;
     font-weight: bolder;
     width: 100%;
-    margin: .5em 0 0 0;
+    margin: .5em 0 0 0.33em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -53,13 +53,13 @@
 
 .cardButton {
     background: rgb(98, 42, 214);
-    background: linear-gradient(180deg, rgba(98, 42, 214, 1) 0%, rgba(143, 54, 185, 1) 100%);
     font-size: 1.1em;
-    border-radius: 25px;
+    border-radius: 40px;
     cursor: pointer;
     user-select: none;
-    padding: .8em;
+    padding: .68em 1em 0.68em 1em;
     width: max-content;
+    font-weight: bold;
 }
 
 .cardButton:hover {

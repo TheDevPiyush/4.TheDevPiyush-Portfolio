@@ -29,6 +29,9 @@ export default function ProjectPage() {
     <>
       <div className="projectpagetitle">
         <div id="titleText">Projects</div>
+        <div className="projectDesc">
+          Projects listed here are connected to my github. You can see Live demo of the projects as well as their source code from my github.
+        </div>
       </div>
 
       {loading
@@ -44,7 +47,7 @@ export default function ProjectPage() {
         :
         <div className="projectContainer">
           {Repositories.map((ele) => (
-            <Card key={ele.id} projectId={ele.id} title={ele.name} body={ele.description} button={"Know More"} />
+            <Card key={ele.id} projectId={ele.id} title={ele.name} body={ele.description} button={"Details"} />
           ))}
         </div>
       }

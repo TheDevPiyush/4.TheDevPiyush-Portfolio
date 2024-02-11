@@ -20,7 +20,6 @@ export default class HomePage extends Component {
                             </div>
                             <div className="subtitle">
                                 Hello visitor, I'm Piyush, I'm a computer science student,
-                                <br />
                                 and a ReactJs Web developer as well.
                             </div>
 
