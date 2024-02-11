@@ -29,19 +29,17 @@ body {
     word-spacing: 2px;
 
 }
-
-.parent {
-    animation: fadeInAnimation ease-in-out 1.4s;
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
-}
+    
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
 
-    100% {
+    50% {
+        opacity: 0.6;
+    }
+    100%{
         opacity: 1;
     }
 }

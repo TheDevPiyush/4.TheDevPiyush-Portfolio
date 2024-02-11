@@ -1,5 +1,5 @@
 .mainLoading {
-    height: 350px;
+    height: 400px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.336);
@@ -11,6 +11,32 @@
     animation: load 5s ease-in-out infinite forwards;
     align-items: flex-start;
 }
+
+.cardTitleLoading {
+    font-size: x-large;
+    font-weight: bolder;
+    width: 100%;
+    margin: .5em 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardBodyLoading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50%;
+    margin-top: 2em;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 1em;
+    border-radius: 1.4em;
+}
+
+
+
 
 @keyframes load {
     0% {
@@ -38,28 +64,4 @@
 
     }
 
-}
-
-.cardTitleLoading {
-    font-size: x-large;
-    font-weight: bolder;
-    width: 100%;
-    margin: .5em 0 0 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.cardBodyLoading {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 50%;
-    margin-top: 2em;
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 1em;
-    border-radius: 1.4em;
 }

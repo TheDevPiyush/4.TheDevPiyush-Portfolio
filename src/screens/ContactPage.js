@@ -7,6 +7,7 @@ export default function ContactPage() {
     document.title = "TheDevPiyush - Contact"
   }, [])
 
+
   const [state, handleSubmit] = useForm("mwkgldol");
 
   return (
@@ -22,7 +23,7 @@ export default function ContactPage() {
         {state.succeeded
           ?
 
-          <center className="confirmation">Thanks For your feedback.. I will reach out to you very soon..</center>
+          <center className="confirmation">Thank You for your feedback. I will reach out to you very soon..</center>
 
           :
           <div className="formContainer">
@@ -34,16 +35,33 @@ export default function ContactPage() {
                 errors={state.errors}
               />
               <input type="email" required name='email' placeholder='Email' />
-              <input type="text" required name='subject' placeholder='Feedback' />
+              <input type="text" required name='message' placeholder='Feedback' />
               <ValidationError
                 prefix="Message"
-                field="subject"
+                field="message"
                 errors={state.errors}
               />
-              <button disabled={state.submitting} id='contactBtn' type='submit'>Send</button>
+              <button disabled={state.submitting} id='contactBtn' type='submit'>{"Send"}</button>
             </form>
           </div>
         }
+
+        <div className="socialLogos">
+
+          <a href="https://www.instagram.com/hey.its.piyush" target='_blank' rel='noreferrer'>
+            <i class="fa-brands i fa-instagram"></i>
+          </a>
+
+          <a href="https://www.github.com/thedevpiyush" target='_blank' rel='noreferrer'>
+            <i class="fa-brands i fa-github"></i>
+          </a>
+
+          <a href="mailto:piyushdev.developer@gmail.com" target='_blank' rel='noreferrer'>
+            <i class="fa-solid i fa-envelope"></i>
+          </a>
+
+
+        </div>
       </div>
     </>
 

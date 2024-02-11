@@ -7,7 +7,7 @@
     padding: 0;
     width: 100%;
     overflow: auto;
-    height: 115vh;
+    height: 130svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
     background: rgb(28, 225, 192);
     background: linear-gradient(232deg, rgba(28, 225, 192, 1) 0%, rgba(64, 85, 229, 1) 100%);
     width: 100%;
-    min-height: 40vh;
+    min-height: 40svh;
 
     display: flex;
     justify-content: space-evenly;
@@ -37,14 +37,15 @@
     flex-direction: column;
     font-size: 2em;
 }
-.subtitleContact{
+
+.subtitleContact {
     text-align: center;
     font-size: medium;
     color: rgb(237, 237, 237);
     padding-bottom: 1.5em;
 }
 
-.confirmation{
+.confirmation {
     font-size: large;
     font-weight: bold;
     color: rgb(237, 237, 237);
@@ -63,15 +64,15 @@ form {
 .formContainer {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     width: 30vw;
     height: 470px;
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, .4);
     border-radius: 30px;
-    margin-bottom: 2em;
     box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.5);
     z-index: 10;
+    margin-top: 3em;
 
 
 }
@@ -98,18 +99,42 @@ input:focus {
 
 #contactBtn {
     color: white;
-    font-size: 1.5em;
-    background-color: transparent;
+    font-size: 1.7em;
+    background-color: rgb(100, 22, 234);
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.292);
     padding: 0.2em 1em 0.2em 1em;
-    border-radius: 20px;
+    border-radius: 50px;
+    font-weight: bold;
 }
-
 #contactBtn:active {
 
     box-shadow: 0 0 0px 0px;
-    background-color: rgba(0, 0, 0, 0.174);
+    background-color: rgb(88, 21, 203);
 
+}
+
+
+.socialLogos {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3em;
+    margin-top: 1.5em;
+}
+
+.i {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.493);
+    border-radius: 50%;
+}
+
+.i:hover {
+    color: lightgray;
+}
+
+.i:active {
+    color: white;
 }
 
 @media (width < 800px) {

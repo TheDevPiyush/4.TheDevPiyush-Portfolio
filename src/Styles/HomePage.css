@@ -13,7 +13,7 @@
     mask: var(--mask);
     mask: var(--mask);
     width: 99vw;
-    min-height: 40vh;
+    min-height: 40svh;
     background: rgb(28, 225, 192);
     background: linear-gradient(232deg, rgba(28, 225, 192, 1) 0%, rgba(64, 85, 229, 1) 100%);
     display: flex;
@@ -32,14 +32,14 @@
 
 .subtitle {
     text-align: center;
-    font-size: medium;
+    font-size: large;
     color: rgb(237, 237, 237);
 }
 
 .brief-curve {
     background: rgb(92, 28, 225);
     background: linear-gradient(145deg, rgba(92, 28, 225, 1) 0%, rgba(176, 64, 229, 1) 100%);
-    min-height: 20vh;
+    min-height: 20svh;
     display: flex;
     flex-direction: column;
     font-size: x-large;
@@ -54,6 +54,15 @@
     font-weight: bold;
     padding-bottom: 1.5em;
 
+}
+
+.rowHome {
+    padding-top: 3em;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .cardContainer {
@@ -97,12 +106,13 @@
     margin-bottom: 1em;
 }
 
+
+
 .exitCurve {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 337px;
-    max-height: max-content;
     max-width: 450px;
     font-size: 1.2em;
     font-weight: bolder;
@@ -112,6 +122,43 @@
     background: rgb(63, 251, 179);
     background: linear-gradient(51deg, rgba(63, 251, 179, 1) 0%, rgba(113, 82, 255, 1) 100%);
     box-shadow: 0 0 35px 8px rgba(25, 255, 255, 0.4);
+    overflow-wrap: break-word;
+
+}
+
+.exitCurve2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+    max-width: 450px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    overflow: hidden;
+    padding: 1.4em;
+    border-radius: 50% 50% 48% 52% / 63% 57% 43% 37%;
+    background: rgb(17, 204, 183);
+    background: linear-gradient(232deg, rgba(17, 204, 183, 1) 24%, rgba(27, 219, 53, 1) 100%);
+    box-shadow: 0 0 35px 8px rgba(25, 255, 128, 0.532);
+    overflow-wrap: break-word;
+
+}
+
+.exitCurve3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+    max-width: 450px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    overflow: hidden;
+    padding: 1.6em;
+    border-radius: 78% 22% 24% 76% / 63% 51% 49% 37% ;
+    background: rgb(149, 5, 237);
+    background: linear-gradient(51deg, rgba(149, 5, 237, 1) 0%, rgba(83, 51, 221, 1) 78%, rgba(22, 94, 207, 1) 100%);
+    box-shadow: 0 0 35px 8px rgba(90, 25, 255, 0.632);
+    overflow-wrap: break-word;
 
 }
 
@@ -119,6 +166,16 @@
     margin-bottom: 5em;
     height: max-content;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper2 {
+    margin-bottom: 5em;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

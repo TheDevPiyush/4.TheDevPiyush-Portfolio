@@ -10,15 +10,61 @@ export default class AboutPage extends Component {
     document.title = "TheDevPiyush - About"
 
     return (
-      <div className='parent'>
+      <>
+                <div className="parent">
+                    <div className="heading">
+                        <div className="heading-curve">
+                            <div className="title">
+                                About
+                            </div>
+                            <div className="subtitle">
+                                This is about me, the technologies I work on, the experience I have and my expectations.
+                            </div>
 
-        <h1>
-          About
-        </h1>
-        <br /><br />
+                        </div>
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, omnis? Aut animi odit quam sint? Qui corporis, illo nihil officia, incidunt quisquam sed possimus, quos iure dolore aperiam omnis minus! Recusandae aperiam in beatae eligendi corporis vero autem voluptates tempore accusantium culpa, illum eius doloribus hic tenetur quisquam unde quia nostrum blanditiis. Eum sunt consequatur, facere quod exercitationem aliquid quasi inventore impedit officia quia quam laborum numquam voluptatem at est, dolorum temporibus sint, minima placeat! Id necessitatibus alias itaque nostrum praesentium dolor aut et tempora nisi! Maiores iusto fuga eveniet optio commodi! Amet quibusdam nisi suscipit fugit harum dolorum consequuntur voluptate, saepe iusto distinctio deserunt nulla culpa excepturi ea exercitationem accusamus eius quo blanditiis architecto quos adipisci eaque. Aperiam earum pariatur dolore, vel eos tempora maxime asperiores veniam natus, odio cum voluptatum a consectetur saepe autem similique laboriosam provident culpa suscipit voluptate, quisquam ipsam repellat magni. Cupiditate quisquam quidem odit, esse culpa nisi nobis delectus et ea itaque odio cum rerum, vitae temporibus! Voluptatum ab consequuntur officia provident quo vitae eveniet sunt porro odio libero blanditiis, reprehenderit magnam natus et adipisci iure rerum possimus incidunt atque aliquam reiciendis inventore. Amet, nam ut? Accusantium quod adipisci maxime. Aut odio perferendis possimus. Quibusdam, perspiciatis? Harum quaerat quasi in quae odio exercitationem modi veritatis sunt animi ex repellendus, nobis doloremque incidunt blanditiis velit mollitia sit. Ipsa tempora delectus repellendus sit eaque! Laboriosam consectetur nobis, totam ex voluptatum aliquam harum, quos itaque doloribus dolorem eius possimus voluptas placeat soluta fugit incidunt eum? Dolor sint, nihil recusandae in sapiente culpa alias error doloribus esse! Commodi rem quia reiciendis, optio officia non laborum, ab, inventore culpa aut praesentium amet dignissimos. Blanditiis rem et adipisci omnis doloribus corrupti esse eius velit repudiandae ullam natus nesciunt repellendus, optio sint dolorum debitis tempora odit sunt odio facere labore consequatur necessitatibus dicta in. Nam dicta culpa pariatur nulla unde distinctio quam nisi consectetur, eius assumenda! Commodi at quia delectus voluptatibus, quod est quis sint quisquam exercitationem iste, quam id quibusdam! Delectus optio sapiente provident voluptatem ipsum dolorum voluptate. Eum atque doloribus architecto repellat delectus facere consectetur ratione quidem quae hic numquam distinctio rerum soluta culpa qui optio, modi, animi aut a laborum explicabo omnis dolore? Deserunt ea autem perspiciatis animi repellat dolor repudiandae repellendus molestias obcaecati voluptas, minus expedita unde et nulla laborum quam veniam optio sit suscipit non provident. Saepe veritatis velit placeat, eligendi vitae sunt fugit ipsa quasi porro tempore ab id animi quia voluptas aliquam tempora tenetur nisi reprehenderit corporis dolorum cupiditate atque, alias reiciendis? Recusandae blanditiis aliquam ratione exercitationem perferendis possimus modi maxime, praesentium dignissimos esse, laboriosam pariatur corporis minus quis voluptatem magnam similique rem iusto sint repudiandae quas? Dolorem quod veniam suscipit dolor quaerat. Eveniet saepe inventore reprehenderit explicabo natus voluptatibus in maiores distinctio exercitationem tempora omnis deserunt dolor pariatur est at, quaerat nisi id soluta debitis. Tenetur, deserunt. Cum dolor ducimus illum. Iure aperiam laudantium, suscipit aliquam amet eligendi non sed doloribus odio, delectus quasi asperiores natus quas magnam molestias dolores, eius deserunt nobis.
-      </div>
+                    </div>
+                    <div className="brief-curve">
+                        <div className="techTitle">Technologies I work with</div>
+                        <div className="techDetails">
+                            <div className="detailCard">
+                                <div className="big">Python</div>
+                                Harnessing the power of Python, I build robust and scalable applications. From web development to data analysis, Python is my go-to language for its versatility and readability.
+                            </div>
+
+                            <div className="line"></div>
+
+                            <div className="detailCard">
+                                <div className="big">HTML, CSS, Js</div>
+                                Proficient in the trifecta of web development, I create captivating and responsive user interfaces. HTML structures, CSS styles, and JavaScript functionality work harmoniously to deliver seamless user experiences.
+                            </div>
+
+                            <div className="line"></div>
+
+                            <div className="detailCard">
+                                <div className="big">ReactJS</div>
+                                Elevating web development with ReactJS, I develop dynamic and interactive user interfaces. React's component-based architecture allows for modular, reusable code, resulting in efficient and maintainable applications.
+                            </div>
+
+                            <div className="line"></div>
+
+                            <div className="detailCard">
+                                <div className="big">React Native</div>
+                                Extending my expertise to mobile app development, I leverage React Native to create cross-platform applications. This framework enables me to deliver native-like experiences on both iOS and Android platforms, saving time and resources.
+
+                            </div>
+                            <div className="line"></div>
+
+                            <div className="detailCard">
+                                <div className="big">Flutter</div>
+                                Embracing the power of Dart and Flutter, I craft visually stunning and high-performance mobile applications. Flutter's single codebase for iOS and Android ensures a consistent and delightful user experience across devices.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </>
     )
   }
 }
