@@ -58,6 +58,8 @@
     padding: .68em 1em 0.68em 1em;
     width: max-content;
     font-weight: bold;
+    border: none;
+    outline: none;
 }
 
 .cardButton:hover {
@@ -67,6 +69,15 @@
 
 .cardButton:active {
     background: rgb(94, 39, 206);
+}
 
+#linkkk {
+    outline: none;
+    border: none;
+}
 
+#linkkk:focus {
+    outline: none;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 40px;
 }

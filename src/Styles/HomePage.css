@@ -93,6 +93,12 @@
     border-radius: 1.3em;
     box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.4);
 }
+.space{
+    margin-top: 3em;
+    padding: 1.5em;
+    margin-bottom: 4em;
+    font-weight: bold;
+}
 
 .big {
     font-weight: bolder;
@@ -178,4 +184,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.welcomeText{
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+.n{
+    font-size: 1.4em;
+
+}
+.currentFocus{
+    margin: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+
 }
