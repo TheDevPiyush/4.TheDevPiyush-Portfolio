@@ -1,0 +1,46 @@
+.annoucementTitle {
+    --mask:
+        radial-gradient(57.88px at 50% calc(100% - 79.50px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(57.88px at 50% calc(100% + 49.50px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+
+    -webkit-mask: var(--mask, --mask2);
+    mask: var(--mask);
+    mask: var(--mask);
+    width: 100%;
+    min-height: 40svh;
+    background: rgb(28, 225, 192);
+    background: linear-gradient(232deg, rgba(28, 225, 192, 1) 0%, rgba(64, 85, 229, 1) 100%);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em;
+    padding-bottom: 1.5em;
+}
+
+.content-div {
+    background: rgb(92, 28, 225);
+    background: linear-gradient(145deg, rgba(92, 28, 225, 1) 0%, rgba(176, 64, 229, 1) 100%);
+    min-height: 60svh;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    width: 100%;
+    --mask:
+        radial-gradient(67.08px at 50% 90.00px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    mask: var(--mask);
+    font-weight: bold;
+    overflow: auto;
+    padding-bottom: 1.5em;
+}
+.content{
+    margin: 2em .6em 2em 1em;
+    font-size: smaller;
+    overflow: auto;
+}

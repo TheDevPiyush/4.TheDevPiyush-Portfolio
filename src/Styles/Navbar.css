@@ -183,3 +183,26 @@
 .mainContainer {
     border-radius: 5px;
 }
+.notify-icon{
+    position: relative;
+
+}
+
+.notify-icon::after {
+    content: "1";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+    font-weight: bolder;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    border:2px solid white;
+    right: 1px;
+    top: 1px;
+    z-index: 100;
+
+}

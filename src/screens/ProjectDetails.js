@@ -6,11 +6,15 @@ const ProjectDetails = () => {
   const { projectId } = useParams();
 
   useEffect(() => {
+
+    document.title = `TheDevPiyush - Project/${projectId}`
+
     const fetchRepoDetails = async () => {
       try {
         const result = await fetch(`https://api.github.com/repositories/${projectId}`);
         const response = await result.json();
         setRepoDetails(response);
+
       } catch (error) {
         console.error('Error fetching repositories:', error);
       }
@@ -19,17 +23,18 @@ const ProjectDetails = () => {
     fetchRepoDetails();
   }, [projectId]);
 
+
   if (!repoDetails) {
     return <p>Loading...</p>;
   }
 
+  { document.title = `TheDevPiyush - Project/${repoDetails.name}` }
   return (
-    <div>
-      <h2>Repository Details</h2>
-      <p>Name: {repoDetails.name}</p>
-      <p>Description: {repoDetails.description}</p>
-      {/* Add more details as needed */}
-    </div>
+    <>
+      {repoDetails.name}
+      {repoDetails.description}
+      <div className="div"></div>
+    </>
   );
 };
 

@@ -49,18 +49,16 @@ export default function ContactPage() {
         <div className="socialLogos">
 
           <a href="https://www.instagram.com/hey.its.piyush" target='_blank' rel='noreferrer'>
-            <i class="fa-brands i fa-instagram"></i>
+            <i className="fa-brands i fa-instagram"></i>
           </a>
 
           <a href="https://www.github.com/thedevpiyush" target='_blank' rel='noreferrer'>
-            <i class="fa-brands i fa-github"></i>
+            <i className="fa-brands i fa-github"></i>
           </a>
 
           <a href="mailto:piyushdev.developer@gmail.com" target='_blank' rel='noreferrer'>
-            <i class="fa-solid i fa-envelope"></i>
+            <i className="fa-solid i fa-envelope"></i>
           </a>
-
-
         </div>
       </div>
     </>

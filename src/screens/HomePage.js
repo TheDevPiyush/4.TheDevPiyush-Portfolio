@@ -17,7 +17,7 @@ export default class HomePage extends Component {
     }
 
     render() {
-        document.title = "TheDevPiyush Home"
+        document.title = "TheDevPiyush - Home"
 
         return (
             <>

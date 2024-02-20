@@ -86,10 +86,11 @@ input {
     border-top-left-radius: 10px;
     font-size: large;
     border-top-right-radius: 10px;
+    font-weight: bold;
 }
 
 input::placeholder {
-    color: wheat;
+    color: rgba(255, 255, 255, 0.539);
 }
 
 input:focus {

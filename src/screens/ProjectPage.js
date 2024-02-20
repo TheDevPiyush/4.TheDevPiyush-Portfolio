@@ -9,6 +9,9 @@ export default function ProjectPage() {
   const [loading, setloading] = useState(true)
 
   useEffect(() => {
+    document.title = "TheDevPiyush - Projects"
+
+
     fetchData()
   }, []);
 
