@@ -1,0 +1,39 @@
+.parentContainer {
+    height: 100svh;
+    position: relative;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 0.4em;
+}
+
+.projectTitle {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+}
+
+.notation {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.margin {
+    margin-top: 0.7em;
+}
+
+#linktag {
+    color: aqua;
+    font-weight: bold;
+}
+
+.note {
+    color: yellow;
+    position: absolute;
+    font-size: small;
+    bottom: calc(100svh - 90%);
+}
+#notfound{
+    font-weight: bold;
+    text-decoration: underline;
+}

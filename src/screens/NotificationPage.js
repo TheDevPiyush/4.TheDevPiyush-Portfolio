@@ -36,7 +36,7 @@ const NotificationPage = () => {
 
       <div className="content-div">
         <div className="content">
-        &#8220;{text.content}&#8221;
+          {text.content}
         </div>
       </div>
 
