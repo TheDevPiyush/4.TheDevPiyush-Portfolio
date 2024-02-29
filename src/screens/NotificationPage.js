@@ -36,7 +36,7 @@ const NotificationPage = () => {
 
       <div className="content-div">
         <div className="content">
-          {text.content}
+          <div className="txt" dangerouslySetInnerHTML={{ __html: text.content }} ></div>
         </div>
       </div>
 

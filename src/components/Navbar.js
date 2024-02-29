@@ -60,7 +60,7 @@ const Navbar = () => {
                         <i id='contact' className={`fa-comments icons contact ${selectedButton === "contact" ? "fa-solid selectedBorder" : "fa-regular"}`}></i>
                     </Link>
                     <Link to="/notification">
-                        <i id='notification' className={`fa-bell icons contact ${notify === true && "notify-icon"}  ${selectedButton === "notification" ? "fa-solid selectedBorder" : "fa-regular"}`}></i>
+                        <i id='notification' className={`fa-bell icons contact ${notify === true && "notify-icon"}  ${selectedButton === "notification" ? "fa-solid" : "fa-regular"}`}></i>
                     </Link>
                 </div>
             </div >

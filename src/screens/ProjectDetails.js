@@ -14,7 +14,9 @@ const ProjectDetails = () => {
       try {
         const result = await fetch(`https://api.github.com/repositories/${projectId}`);
         const response = await result.json();
-        setRepoDetails(response);
+        setTimeout(() => {
+          setRepoDetails(response);
+        }, 2000);
 
       } catch (error) {
         console.error('Error fetching repositories:', error);
@@ -26,7 +28,13 @@ const ProjectDetails = () => {
 
 
   if (!repoDetails) {
-    return <p>Loading...</p>;
+    return <div className="spiinerduv">
+      <div className="spinbox">
+        <div className="spinner">
+        </div>
+        <div className="innerspinner"></div>
+      </div>
+    </div>;
   }
 
   document.title = `TheDevPiyush - Project/${repoDetails.name}`

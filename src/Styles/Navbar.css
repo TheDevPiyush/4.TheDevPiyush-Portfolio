@@ -183,9 +183,23 @@
 .mainContainer {
     border-radius: 5px;
 }
-.notify-icon{
-    position: relative;
 
+.notify-icon {
+    position: relative;
+    animation: shaking 1s infinite;
+}
+
+@keyframes shaking {
+
+    0%{
+        transform: translateX(0);
+    }
+    5%, 15%, 25%, 35%, 45%{
+        transform: translateX(4px);
+    }
+    10%, 20%, 30%, 40%, 50%{
+        transform: translateX(0);
+    }
 }
 
 .notify-icon::after {
@@ -200,7 +214,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: red;
-    border:2px solid white;
+    border: 2px solid white;
     right: 1px;
     top: 1px;
     z-index: 100;

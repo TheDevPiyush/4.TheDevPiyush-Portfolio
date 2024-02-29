@@ -33,7 +33,68 @@
     font-size: small;
     bottom: calc(100svh - 90%);
 }
-#notfound{
+
+#notfound {
     font-weight: bold;
     text-decoration: underline;
+}
+
+.spiinerduv {
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    height: 58px;
+    width: 58px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid white;
+    border-radius: 50%;
+    animation: spin 1s infinite ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.innerspinner {
+    height: 35px;
+    width: 35px;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+    border-bottom: 4px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    animation: counterspin 1s infinite ease-in-out;
+
+}
+@keyframes counterspin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
