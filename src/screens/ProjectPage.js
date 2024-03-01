@@ -24,7 +24,7 @@ export default function ProjectPage() {
         setloading(false)
       }, 3000);
     } catch (error) {
-      console.error('Error fetching repositories:', error);
+      return <div>API Limit has been reached, please try after few minutes.</div>
     }
   }
 

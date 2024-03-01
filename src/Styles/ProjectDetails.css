@@ -1,9 +1,13 @@
 .parentContainer {
-    height: 100svh;
+    height: 100%;
     position: relative;
     width: 100%;
     word-wrap: break-word;
     padding: 0.4em;
+}
+
+.mainParent {
+    height: 150vh;
 }
 
 .projectTitle {
@@ -28,10 +32,53 @@
 }
 
 .note {
+    padding: 15px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
     color: yellow;
-    position: absolute;
-    font-size: small;
-    bottom: calc(100svh - 90%);
+    position: fixed;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    bottom: 10%;
+    right: 0;
+    font-size: medium;
+    background-color: rgb(8, 8, 50);
+    z-index: 100;
+    backdrop-filter: blur(29px);
+    animation: move 700ms ease-in-out forwards;
+}
+
+.progress {
+    height: 5px;
+    width: 10px;
+    background-color: red;
+    animation: progress 10s ease-in-out 1 forwards;
+    margin-top: 7px;
+}
+
+@keyframes progress {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%;
+    }
+
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+
 }
 
 #notfound {
@@ -68,7 +115,7 @@
     }
 }
 
-.spinbox{
+.spinbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,6 +136,7 @@
     animation: counterspin 1s infinite ease-in-out;
 
 }
+
 @keyframes counterspin {
     from {
         transform: rotate(0deg);

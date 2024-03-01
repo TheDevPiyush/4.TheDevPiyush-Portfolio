@@ -4,6 +4,7 @@ import '../Styles/ProjectDetails.css'
 
 const ProjectDetails = () => {
   const [repoDetails, setRepoDetails] = useState(null);
+  const [alert, setAlert] = useState(true)
   const { projectId } = useParams();
 
   useEffect(() => {
@@ -16,14 +17,21 @@ const ProjectDetails = () => {
         const response = await result.json();
         setTimeout(() => {
           setRepoDetails(response);
+          setTimeout(() => {
+            setAlert(false)
+          }, 10000);
         }, 2000);
 
+
       } catch (error) {
-        console.error('Error fetching repositories:', error);
+        return <div>API Limit has been reached for your IP. Please try after few minutes.</div>
       }
     };
 
     fetchRepoDetails();
+
+
+
   }, [projectId]);
 
 
@@ -40,34 +48,37 @@ const ProjectDetails = () => {
   document.title = `TheDevPiyush - Project/${repoDetails.name}`
   return (
     <>
+      <div className="mainParent">
 
-      <div className="parentContainer">
+        <div className="parentContainer">
 
-        <div className="projectTitle">
-          {repoDetails.name}
-        </div>
+          <div className="projectTitle">
+            {repoDetails.name}
+          </div>
 
-        <div className="projectDesccription margin">
-          <div className="notation">About the project:</div>
-          {repoDetails.description}
-        </div>
+          <div className="projectDesccription margin">
+            <div className="notation">About the project:</div>
+            {repoDetails.description}
+          </div>
 
-        <div className="sourceCode margin">
-          <div className="notation">Source code of the project:</div>
-          <a id='linktag' href={`${repoDetails.url}`} target='_blank' rel="noreferrer" >
-            {repoDetails.url}
-          </a>
-        </div>
+          <div className="sourceCode margin">
+            <div className="notation">Source code of the project:</div>
+            <a id='linktag' href={`${repoDetails.html_url}`} target='_blank' rel="noreferrer" >
+              {repoDetails.html_url}
+            </a>
+          </div>
 
-        <div className="liveDemo margin">
-          <div className="notation">Live working output:</div>
-          <a id='linktag' href={`${repoDetails.homepage}`} target='_blank' rel="noreferrer" >
-            {repoDetails.homepage}
-          </a>
-        </div>
+          <div className="liveDemo margin">
+            <div className="notation">Live working output:</div>
+            <a id='linktag' href={`${repoDetails.homepage}`} target='_blank' rel="noreferrer" >
+              {repoDetails.homepage}
+            </a>
+          </div>
 
-        <div className="note">
-          If you are geeting a <span id='notfound'> page not found</span> or any other errors when visiting the project links, please leave a feedback. <br /> I may need to update some project servers. Thank you!
+          {alert && <div className="note">
+            <div className="notemsg">If you are geeting a <span id='notfound'> page not found</span> error while visiting the project links, please leave a feedback.</div>
+            <div className="progress"></div>
+          </div>}
         </div>
       </div>
 
