@@ -10,8 +10,6 @@ export default function ProjectPage() {
 
   useEffect(() => {
     document.title = "TheDevPiyush - Projects"
-
-
     fetchData()
   }, []);
 
@@ -33,7 +31,7 @@ export default function ProjectPage() {
       <div className="projectpagetitle">
         <div id="titleText">Projects</div>
         <div className="projectDesc">
-          Projects listed here are connected to my github. You can see Live demo of the projects as well as their source code from my github.
+          Check out my GitHub for live demos and source code of connected projects.
         </div>
       </div>
 
@@ -50,7 +48,7 @@ export default function ProjectPage() {
         :
         <div className="projectContainer">
           {Repositories.map((ele) => (
-            <Card key={ele.id} projectId={ele.id} title={ele.name} body={ele.description} button={"Details"} />
+            <Card key={ele.id} projectId={ele.id} title={ele.name} body={ele.description} liveOutputUrl={ele.homepage} sourceCodeUrl={ele.html_url} />
           ))}
         </div>
       }

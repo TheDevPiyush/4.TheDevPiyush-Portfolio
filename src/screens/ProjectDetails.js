@@ -56,29 +56,35 @@ const ProjectDetails = () => {
             {repoDetails.name}
           </div>
 
-          <div className="projectDesccription margin">
-            <div className="notation">About the project:</div>
-            {repoDetails.description}
+          <div className="projectDescription margin">
+
+
+            <div className="desc">
+              {repoDetails.description}
+            </div>
+
+            <div className="btnsContainer">
+              <div className="btnContainer2">
+
+                <div className="sourceCode a margin">
+                  <a id='linktag' style={{ "color": "white" }} href={`${repoDetails.html_url}`} target='_blank' rel="noreferrer" >
+                    Source Code
+                  </a>
+                </div>
+
+                <div className="liveDemo a margin">
+                  <a id='linktag' style={{ "color": "white" }} href={`${repoDetails.homepage}`} target='_blank' rel="noreferrer" >
+                    Live Output
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="sourceCode margin">
-            <div className="notation">Source code of the project:</div>
-            <a id='linktag' href={`${repoDetails.html_url}`} target='_blank' rel="noreferrer" >
-              {repoDetails.html_url}
-            </a>
-          </div>
-
-          <div className="liveDemo margin">
-            <div className="notation">Live working output:</div>
-            <a id='linktag' href={`${repoDetails.homepage}`} target='_blank' rel="noreferrer" >
-              {repoDetails.homepage}
-            </a>
-          </div>
-
-          {alert && <div className="note">
+          {/* {alert && <div className="note">
             <div className="notemsg">If you are geeting a <span id='notfound'> page not found</span> error while visiting the project links, please leave a feedback.</div>
             <div className="progress"></div>
-          </div>}
+          </div>} */}
         </div>
       </div>
 

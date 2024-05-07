@@ -7,20 +7,90 @@
 }
 
 .mainParent {
-    height: 150vh;
+    height: 100svh;
 }
 
 .projectTitle {
+    --mask:
+        radial-gradient(57.88px at 50% calc(100% - 79.50px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(57.88px at 50% calc(100% + 49.50px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+
+    -webkit-mask: var(--mask, --mask2);
+    mask: var(--mask);
+    mask: var(--mask);
+    background: rgb(28, 225, 192);
+    background: linear-gradient(232deg, rgba(28, 225, 192, 1) 0%, rgba(64, 85, 229, 1) 100%);
+    width: 100%;
+    min-height: 20%;
     font-size: xx-large;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
 }
 
-.notation {
-    font-weight: bold;
-    font-size: x-large;
+.projectDescription {
+    background: rgb(92, 28, 225);
+    background: linear-gradient(145deg, rgba(176, 64, 229, 1) 100%, rgba(92, 28, 225, 1) 0%);
+    --mask:
+        radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    min-height: 65%;
+    padding: 3em 1em 0 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3em;
+    overflow-y: auto;
+    justify-content: space-evenly;
 }
+
+.desc {
+    background-color: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    padding: 1em;
+    border-radius: 24px;
+    font-size: large;
+}
+
+.btnsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    background: rgb(98, 42, 214);
+    color: white;
+    padding: 14px;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+}
+
+.a:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background: rgba(99, 42, 214, 0.807);
+
+}
+
 
 .margin {
     margin-top: 0.7em;

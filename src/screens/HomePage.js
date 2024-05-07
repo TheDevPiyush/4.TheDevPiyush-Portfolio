@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../Styles/HomePage.css'
+import TypingEffect from '../components/TypingEffect'
 
 export default class HomePage extends Component {
 
@@ -25,11 +26,11 @@ export default class HomePage extends Component {
                     <div className="heading">
                         <div className="heading-curve">
                             <div className="title">
-                                Welcome to TheDevPiyush
+                                TheDevPiyush
                             </div>
                             <div className="subtitle">
-                                Hello visitor, I'm Piyush, I'm a computer science student,
-                                and a ReactJs Web developer as well.
+                                Hello visitor, I'm Piyush, I'm a <span id=''>{<TypingEffect words={['React Dev.', 'Web Dev.', 'CS Student.', 'Freelancer.', 'Leetcoder.']} />
+                                }</span>
                             </div>
 
                         </div>

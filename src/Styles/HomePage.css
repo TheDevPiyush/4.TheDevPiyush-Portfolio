@@ -13,13 +13,13 @@
     mask: var(--mask);
     mask: var(--mask);
     width: 99vw;
-    min-height: 40svh;
+    min-height:  35svh;
     background: rgb(28, 225, 192);
     background: linear-gradient(232deg, rgba(28, 225, 192, 1) 0%, rgba(64, 85, 229, 1) 100%);
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 1.5em;
@@ -33,17 +33,48 @@
 .subtitle {
     text-align: center;
     font-size: large;
+    margin: 5px;
     color: rgb(237, 237, 237);
 }
 
+.subtitle-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+#auto-text {
+    min-width: 100%;
+    min-height: 1.5em;
+    font-weight: bolder;
+}
+
+#blink {
+    color: lightgray;
+    border: 1px solid rgba(43, 43, 43, 0.573);
+    margin: 5px;
+    max-height: 10px;
+    animation: blink .6s infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .brief-curve {
-    background: rgb(92, 28, 225);
-    background: linear-gradient(145deg, rgba(92, 28, 225, 1) 0%, rgba(176, 64, 229, 1) 100%);
     min-height: 20svh;
     display: flex;
     flex-direction: column;
     font-size: x-large;
     width: 100%;
+    background: rgb(92, 28, 225);
+    background: linear-gradient(145deg, rgba(92, 28, 225, 1) 0%, rgba(176, 64, 229, 1) 100%);
     --mask:
         radial-gradient(67.08px at 50% 90.00px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
         radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
@@ -79,6 +110,14 @@
     margin-bottom: 1em;
 }
 
+li {
+    margin: .7em;
+}
+
+ul {
+    list-style-type: disc;
+}
+
 .techDetails {
     margin: .5em;
     font-size: .8em;
@@ -93,7 +132,8 @@
     border-radius: 1.3em;
     box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.4);
 }
-.space{
+
+.space {
     margin-top: 3em;
     padding: 1.5em;
     margin-bottom: 4em;
@@ -116,6 +156,7 @@
 
 .exitCurve {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     min-height: 337px;
@@ -134,6 +175,8 @@
 
 .exitCurve2 {
     display: flex;
+    text-align: center;
+
     justify-content: center;
     align-items: center;
     min-height: 360px;
@@ -152,6 +195,8 @@
 
 .exitCurve3 {
     display: flex;
+    text-align: center;
+
     justify-content: center;
     align-items: center;
     min-height: 360px;
@@ -160,7 +205,7 @@
     font-weight: bolder;
     overflow: hidden;
     padding: 1.6em;
-    border-radius: 78% 22% 24% 76% / 63% 51% 49% 37% ;
+    border-radius: 78% 22% 24% 76% / 63% 51% 49% 37%;
     background: rgb(149, 5, 237);
     background: linear-gradient(51deg, rgba(149, 5, 237, 1) 0%, rgba(83, 51, 221, 1) 78%, rgba(22, 94, 207, 1) 100%);
     box-shadow: 0 0 35px 8px rgba(90, 25, 255, 0.632);
@@ -187,16 +232,17 @@
 }
 
 
-.welcomeText{
+.welcomeText {
     margin: 1em;
     font-size: 1.2em;
 }
 
-.n{
+.n {
     font-size: 1.4em;
 
 }
-.currentFocus{
+
+.currentFocus {
     margin: 1em;
     font-size: 1.2em;
     font-weight: bold;

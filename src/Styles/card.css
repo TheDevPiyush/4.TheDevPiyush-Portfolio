@@ -24,6 +24,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
+
 }
 
 .cardBody {
@@ -43,7 +45,7 @@
 
 .cardButtonContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     margin-top: 2.5em;
@@ -71,12 +73,18 @@
     background: rgb(94, 39, 206);
 }
 
+.cardButton:focus {
+    outline: none;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
 #linkkk {
     outline: none;
     border: none;
 }
 
-#linkkk:focus {
+#button:focus {
     outline: none;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 40px;
