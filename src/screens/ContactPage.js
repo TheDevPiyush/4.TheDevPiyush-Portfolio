@@ -13,10 +13,11 @@ export default function ContactPage() {
   return (
     <>
       <div className="contactTitle">
-        Contact
-        <br />
+        <div className="contitle">
+          <h1>Contact</h1>
+        </div>
         <div className="subtitleContact">
-          Contact me on Github, Instagram, Mail or Leave your feedback here so that I can reach out to you...
+          <h2>Contact me on Github, Instagram, Mail or Leave your feedback here so that I can reach out to you...</h2>
         </div>
       </div>
       <div className='parentContact'>

@@ -30,7 +30,7 @@ const NotificationPage = () => {
       <div className="some" style={{ width: "100%" }}>
 
         <div className='annoucementTitle'>
-          {text.title}
+          <h1>{text.title}</h1>
         </div>
       </div>
 

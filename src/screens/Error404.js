@@ -8,7 +8,7 @@ export default class Error404 extends Component {
         <div className="mainErrorDiv">
           <h1>
             <strong style={{ fontSize: 'xx-large' }} >
-              Error 404
+              <h1>Error 404</h1>
               <i class="fa-solid fa-cloud-exclamation" style={{ margin: '1em' }}></i>
             </strong>
             <br />

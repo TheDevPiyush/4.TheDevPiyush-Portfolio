@@ -29,9 +29,9 @@ export default function ProjectPage() {
   return (
     <>
       <div className="projectpagetitle">
-        <div id="titleText">Projects</div>
+        <div id="titleText"><h1>Projects</h1></div>
         <div className="projectDesc">
-          Check out my GitHub for live demos and source code of connected projects.
+          <h2> Check out my GitHub for live demos and source code of connected projects.</h2>
         </div>
       </div>
 

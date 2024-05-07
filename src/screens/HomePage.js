@@ -26,11 +26,11 @@ export default class HomePage extends Component {
                     <div className="heading">
                         <div className="heading-curve">
                             <div className="title">
-                                TheDevPiyush
+                                <h1>TheDevPiyush</h1>
                             </div>
                             <div className="subtitle">
-                                Hello visitor, I'm Piyush, I'm a <span id=''>{<TypingEffect words={['React Dev.', 'Web Dev.', 'CS Student.', 'Freelancer.', 'Leetcoder.']} />
-                                }</span>
+                                <h2>Hello visitor, I'm Piyush, I'm a <span id=''>{<TypingEffect words={['React Dev.', 'Web Dev.', 'CS Student.', 'Freelancer.', 'Leetcoder.']} />
+                                }</span></h2>
                             </div>
 
                         </div>

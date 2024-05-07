@@ -19,10 +19,10 @@ const AboutPage = () => {
                 <div className="heading">
                     <div className="heading-curve">
                         <div className="title">
-                            About
+                            <h1>About</h1>
                         </div>
                         <div className="subtitle">
-                            This is about me, the technologies I work on, the experience I have and my goals.
+                            <h2>This is about me, the technologies I work on, the experience I have and my goals.</h2>
                         </div>
                     </div>
                 </div>
