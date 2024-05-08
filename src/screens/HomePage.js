@@ -18,7 +18,7 @@ export default class HomePage extends Component {
     }
 
     render() {
-        document.title = "TheDevPiyush - Home"
+        document.title = "TheDevPiyush - Portfolio"
 
         return (
             <>
@@ -26,7 +26,7 @@ export default class HomePage extends Component {
                     <div className="heading">
                         <div className="heading-curve">
                             <div className="title">
-                                <h1>TheDevPiyush</h1>
+                                <h1>TheDevPiyush - Portfolio</h1>
                             </div>
                             <div className="subtitle">
                                 <h2>Hello visitor, I'm Piyush, I'm a <span id=''>{<TypingEffect words={['React Dev.', 'Web Dev.', 'CS Student.', 'Freelancer.', 'Leetcoder.']} />
@@ -40,20 +40,18 @@ export default class HomePage extends Component {
                     <div className="rowHome">
                         <div className="upper2">
                             <div className="exitCurve3">
-
-                                To know more about my projects, Please Visit my Projects section, It has some of my best projects.
-
+                                Portfolio showcasing my coding projects, skills, and providing a gateway to connect with me..
                             </div>
                         </div>
                         <div className="upper">
                             <div className="exitCurve">
-                                To know more about my me, Please Visit my About section, You can get some insignts about me and my work.
+                                For more details on my projects, visit the Projects section showcasing some of my finest work.
                             </div>
                         </div>
 
                         <div className="upper2">
                             <div className="exitCurve2">
-                                To get in touch with me, Kindly visit the feedback page to contact me, or you can also leave a feedback there.
+                                To connect with me, please visit the Feedback page to leave your thoughts or contact me directly.
                             </div>
                         </div>
 
