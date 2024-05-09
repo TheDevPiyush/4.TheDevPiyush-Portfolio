@@ -16,7 +16,7 @@ export default function Card(props) {
         if (props.liveOutputUrl) {
             window.open(props.liveOutputUrl, '_blank');
         } else {
-            alert('Live Output URL not available');
+            alert(`Live Output URL not available for ${props.title}.`);
         }
     };
 
@@ -30,10 +30,10 @@ export default function Card(props) {
             </div>
 
             <div className="cardButtonContainer">
-                <button className="cardButton" onClick={() => { redirectToSourceCode(props.sourceCodeUrl) }}>
+                <button className="cardButton" onClick={() => { redirectToSourceCode(props.sourceCodeUrl, ) }}>
                     Source Code
                 </button>
-                <button className="cardButton" onClick={() => { redirectToLiveOutput(props.liveOutputUrl) }}>
+                <button className="cardButton" onClick={() => { redirectToLiveOutput(props.liveOutputUrl, props.title) }}>
                     Live Output
                 </button>
             </div>

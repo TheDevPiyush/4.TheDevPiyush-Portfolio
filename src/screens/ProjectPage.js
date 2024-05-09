@@ -17,7 +17,8 @@ export default function ProjectPage() {
     try {
       const result = await fetch(`https://api.github.com/users/thedevpiyush/repos`);
       const response = await result.json();
-      setRepositories(response);
+      const filteredRepositories = response.filter(repo => !repo.private && !repo.disabled);
+      setRepositories(filteredRepositories);
       setTimeout(() => {
         setloading(false)
       }, 3000);
