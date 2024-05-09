@@ -26,15 +26,14 @@ export default function Card(props) {
             <div className="cardTitle">
                 {props.title}
             </div>
-            <div className="cardBody">
-                {props.body}
+            <div className="cardBody" dangerouslySetInnerHTML={{ __html: props.body }}>
             </div>
 
             <div className="cardButtonContainer">
-                <button className="cardButton" onClick={()=>{redirectToSourceCode(props.sourceCodeUrl)}}>
+                <button className="cardButton" onClick={() => { redirectToSourceCode(props.sourceCodeUrl) }}>
                     Source Code
                 </button>
-                <button className="cardButton" onClick={()=>{redirectToLiveOutput(props.liveOutputUrl)}}>
+                <button className="cardButton" onClick={() => { redirectToLiveOutput(props.liveOutputUrl) }}>
                     Live Output
                 </button>
             </div>
