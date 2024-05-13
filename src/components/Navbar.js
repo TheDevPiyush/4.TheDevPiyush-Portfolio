@@ -15,13 +15,13 @@ const Navbar = () => {
         const route = location.pathname.substring(1);
         setSelectedButton(route || "home");
 
-        if(selectedButton === "notification"){
+        if (selectedButton === "notification") {
             setnotify(false)
         }
 
     }, [location.pathname]);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetchtext()
     }, [])
 
@@ -31,7 +31,7 @@ const Navbar = () => {
         const data = await getDocs(collection(db, "Messages"))
         data.forEach((doc) => {
 
-            if (localStorage.getItem("message") != doc.data().content) {
+            if (localStorage.getItem("message") !== doc.data().content) {
                 console.log("new Data")
                 setnotify(true)
             }
@@ -48,19 +48,16 @@ const Navbar = () => {
 
                 <div className="iconContainer">
                     <Link to="/">
-                        <i id='home' className={` fa-house icons home ${selectedButton === "home" ? "fa-solid selectedBorder " : "fa-regular"}`}></i>
-                    </Link>
-                    <Link to='/about'>
-                        <i id='about' className={`fa-id-card icons about ${selectedButton === "about" ? "fa-solid selectedBorder" : "fa-regular"}`}></i>
+                        <i id='home' className={` fa-house icons home ${selectedButton === "home" ? "fa-solid selectedBorder " : "fa-regular"}`}> <span className='icon-text'>Home</span></i>
                     </Link>
                     <Link to='/projects'>
-                        <i id='projects' className={`fa-puzzle-piece icons projects ${selectedButton === "projects" ? "fa-solid selectedBorder" : "fa-regular"}`}></i>
+                        <i id='projects' className={`fa-puzzle-piece icons projects ${selectedButton === "projects" ? "fa-solid selectedBorder" : "fa-regular"}`}><span className='icon-text'>Projects</span></i>
                     </Link>
                     <Link to="/contact">
-                        <i id='contact' className={`fa-comments icons contact ${selectedButton === "contact" ? "fa-solid selectedBorder" : "fa-regular"}`}></i>
+                        <i id='contact' className={`fa-comments icons contact ${selectedButton === "contact" ? "fa-solid selectedBorder" : "fa-regular"}`}><span className='icon-text'>Contact</span></i>
                     </Link>
                     <Link to="/notification">
-                        <i id='notification' className={`fa-bell icons contact ${notify === true && "notify-icon"}  ${selectedButton === "notification" ? "fa-solid" : "fa-regular"}`}></i>
+                        <i id='notification' className={`fa-bell icons contact ${notify === true && "notify-icon"}  ${selectedButton === "notification" ? "fa-solid selectedBorder" : "fa-regular"}`}><span className='icon-text'>Updates</span></i>
                     </Link>
                 </div>
             </div >

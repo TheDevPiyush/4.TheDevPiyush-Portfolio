@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../Styles/HomePage.css'
 import TypingEffect from '../components/TypingEffect'
+import { Link } from 'react-router-dom'
 
 export default class HomePage extends Component {
 
@@ -38,26 +39,45 @@ export default class HomePage extends Component {
                     </div>
 
                     <div className="rowHome">
-                        <div className="upper2">
-                            <div className="exitCurve3">
-                                Portfolio showcasing my coding projects, skills, and providing a gateway to connect with me..
+                        <div className="half-container g1">
+                            <div className='skills'>Skills</div>
+                            <div className="tag">
+                                <span className='skill-span'>Javascript | NodeJs</span>
+                                <span className='skill-span'>ReactJs</span>
+                                <span className='skill-span'>ExpressJs</span>
+                                <span className='skill-span'>MongoDB</span>
+
+                                <span className='skill-span'>Django</span>
+                                <span className='skill-span'>Python</span>
+                                <span className='skill-span'>Java</span>
+                                <span className='skill-span'>C/C++</span>
                             </div>
                         </div>
-                        <div className="upper">
-                            <div className="exitCurve">
-                                For more details on my projects, visit the Projects section showcasing some of my finest work.
+                        <div className="half-container g2">
+                            <div className='skills'>Tools</div>
+                            <div className="tag">
+                                <span className='skill-span'>GitHub</span>
+                                <span className='skill-span'>VS Code</span>
+                                <span className='skill-span'>Android Studio</span>
+                                <span className='skill-span'>ChatGPT</span>
+                                <span className='skill-span'>Firebase</span>
                             </div>
                         </div>
 
-                        <div className="upper2">
-                            <div className="exitCurve2">
-                                To connect with me, please visit the Feedback page to leave your thoughts or contact me directly.
+                        <div className="half-container g3">
+                            <div className='skills'>Projects</div>
+                            <div className="tag">
+                                <span className='skill-span'>Chat App</span>
+                                <span className='skill-span'>E-Commerce App</span>
+                                <span className='skill-span'>Bots</span>
+                                <Link id='link-projects' to="/projects">
+                                    <span className='skill-span'>View More <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                </Link>
                             </div>
                         </div>
 
                     </div >
-
-                </div>
+                </div >
 
             </>
         )

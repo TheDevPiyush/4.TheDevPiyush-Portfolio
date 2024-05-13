@@ -27,6 +27,7 @@ body {
     color: white;
     font-family: 'Inconsolata', monospace;
     word-spacing: 2px;
+    word-wrap: break-word;
 
 }
     

@@ -13,7 +13,7 @@
     mask: var(--mask);
     mask: var(--mask);
     width: 99vw;
-    min-height:  35svh;
+    min-height: 35svh;
     background: rgb(28, 225, 192);
     background: linear-gradient(232deg, rgba(28, 225, 192, 1) 0%, rgba(64, 85, 229, 1) 100%);
     display: flex;
@@ -88,18 +88,20 @@
 }
 
 .rowHome {
-    padding-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 3.5em;
     flex-wrap: wrap;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .cardContainer {
     margin-top: 2em;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5em;
 }
 
@@ -152,69 +154,101 @@ ul {
     margin-bottom: 1em;
 }
 
-
-
-.exitCurve {
+.half-container {
+    word-wrap: break-word;
+    height: 100%;
     display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    min-height: 337px;
-    max-width: 450px;
-    font-size: 1.2em;
-    font-weight: bolder;
-    overflow: hidden;
-    padding: 1.4em;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background: rgb(63, 251, 179);
-    background: linear-gradient(51deg, rgba(63, 251, 179, 1) 0%, rgba(113, 82, 255, 1) 100%);
-    box-shadow: 0 0 35px 8px rgba(25, 255, 255, 0.4);
-    overflow-wrap: break-word;
+    width: fit-content;
+    flex-direction: column;
+    padding: 1rem 0 1rem 0;
+    border-radius: 25px;
+    margin: .5em;
 
 }
 
-.exitCurve2 {
-    display: flex;
-    text-align: center;
+.g1 {
 
-    justify-content: center;
-    align-items: center;
-    min-height: 360px;
-    max-width: 450px;
-    font-size: 1.2em;
-    font-weight: bolder;
-    overflow: hidden;
-    padding: 1.4em;
-    border-radius: 50% 50% 48% 52% / 63% 57% 43% 37%;
-    background: rgb(17, 204, 183);
-    background: linear-gradient(232deg, rgba(17, 204, 183, 1) 24%, rgba(27, 219, 53, 1) 100%);
-    box-shadow: 0 0 35px 8px rgba(25, 255, 128, 0.532);
-    overflow-wrap: break-word;
+    background: rgb(36, 37, 37);
+
+    background: linear-gradient(45deg, hsla(191, 71%, 68%, 1) 0%, hsla(248, 100%, 80%, 1) 100%);
+
+    background: -moz-linear-gradient(45deg, hsla(191, 71%, 68%, 1) 0%, hsla(248, 100%, 80%, 1) 100%);
+
+    background: -webkit-linear-gradient(45deg, hsla(191, 71%, 68%, 1) 0%, hsla(248, 100%, 80%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#73D2E7", endColorstr="#A99BFF", GradientType=1);
 
 }
 
-.exitCurve3 {
+.g2 {
+    background: hsla(212, 35%, 58%, 1);
+
+    background: linear-gradient(45deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+
+    background: -moz-linear-gradient(45deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+
+    background: -webkit-linear-gradient(45deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6D90B9", endColorstr="#BBC7DC", GradientType=1);
+
+}
+
+.g3 {
+    background: hsla(248, 21%, 15%, 1);
+
+    background: linear-gradient(45deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+
+    background: -moz-linear-gradient(45deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+
+    background: -webkit-linear-gradient(45deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#211F2F", endColorstr="#918CA9", GradientType=1);
+
+}
+
+.skills {
+    height: 30%;
     display: flex;
-    text-align: center;
-
-    justify-content: center;
     align-items: center;
-    min-height: 360px;
-    max-width: 450px;
-    font-size: 1.2em;
-    font-weight: bolder;
-    overflow: hidden;
-    padding: 1.6em;
-    border-radius: 78% 22% 24% 76% / 63% 51% 49% 37%;
-    background: rgb(149, 5, 237);
-    background: linear-gradient(51deg, rgba(149, 5, 237, 1) 0%, rgba(83, 51, 221, 1) 78%, rgba(22, 94, 207, 1) 100%);
-    box-shadow: 0 0 35px 8px rgba(90, 25, 255, 0.632);
-    overflow-wrap: break-word;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
 
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 22px;
+
+}
+
+
+.skill-span {
+    background-color: rgba(255, 255, 255, 0.232);
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+    padding: 12px;
+    height: max-content;
+    width: max-content;
+    flex-shrink: 0;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.155);
+}
+
+#link-projects {
+    display: flex;
+    align-items: center;
+    color: aqua;
+    /* text-decoration: underline; */
 }
 
 .upper {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -223,7 +257,7 @@ ul {
 }
 
 .upper2 {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     height: max-content;
     display: flex;
     flex-direction: column;
