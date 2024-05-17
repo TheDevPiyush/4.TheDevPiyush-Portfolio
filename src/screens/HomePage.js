@@ -42,11 +42,11 @@ export default class HomePage extends Component {
                         <div className="half-container g1">
                             <div className='skills'>Skills</div>
                             <div className="tag">
-                                <span className='skill-span'>Javascript | NodeJs</span>
-                                <span className='skill-span'>ReactJs</span>
-                                <span className='skill-span'>ExpressJs</span>
+                                <span className='skill-span'>Javascript | Node.Js</span>
+                                <span className='skill-span'>React.Js</span>
+                                <span className='skill-span'>Express.Js</span>
                                 <span className='skill-span'>MongoDB</span>
-
+                                <span className='skill-span'>MERN</span>
                                 <span className='skill-span'>Django</span>
                                 <span className='skill-span'>Python</span>
                                 <span className='skill-span'>Java</span>
