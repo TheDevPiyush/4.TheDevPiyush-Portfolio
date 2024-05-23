@@ -30,7 +30,7 @@ export default class HomePage extends Component {
                                 <h1>TheDevPiyush - Portfolio</h1>
                             </div>
                             <div className="subtitle">
-                                <h2>Hello visitor, I'm Piyush, I'm a <span id=''>{<TypingEffect words={['React Dev.', 'Web Dev.', 'CS Student.', 'Freelancer.', 'Leetcoder.']} />
+                                <h2>Hello visitor, I'm Piyush, I'm a <span id=''>{<TypingEffect words={['React Dev.', 'MERN Dev.', 'Web Dev.', 'CS Student.', 'Freelancer.', 'Leetcoder.']} />
                                 }</span></h2>
                             </div>
 
@@ -42,15 +42,15 @@ export default class HomePage extends Component {
                         <div className="half-container g1">
                             <div className='skills'>Skills</div>
                             <div className="tag">
-                                <span className='skill-span'>Javascript | Node.Js</span>
-                                <span className='skill-span'>React.Js</span>
-                                <span className='skill-span'>Express.Js</span>
                                 <span className='skill-span'>MongoDB</span>
+                                <span className='skill-span'>Express.Js</span>
+                                <span className='skill-span'>React.Js</span>
+                                <span className='skill-span'>Node.Js</span>
                                 <span className='skill-span'>MERN</span>
+                                <span className='skill-span'>JavaScript</span>
+                                <span className='skill-span'>Full Stack Web</span>
                                 <span className='skill-span'>Django</span>
                                 <span className='skill-span'>Python</span>
-                                <span className='skill-span'>Java</span>
-                                <span className='skill-span'>C/C++</span>
                             </div>
                         </div>
                         <div className="half-container g2">
