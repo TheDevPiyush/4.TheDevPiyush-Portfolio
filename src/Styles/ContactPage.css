@@ -7,7 +7,7 @@
     padding: 0;
     width: 100%;
     overflow: auto;
-    height: 130svh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
     background: rgb(28, 225, 192);
     background: linear-gradient(232deg, rgba(28, 225, 192, 1) 0%, rgba(64, 85, 229, 1) 100%);
     width: 100%;
-    min-height: 40svh;
+    height: 40svh;
 
     display: flex;
     justify-content: center;
@@ -67,13 +67,13 @@ form {
     justify-content: center;
     align-items: center;
     width: 30vw;
-    height: 470px;
+    height: 100%;
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, .4);
     border-radius: 30px;
     box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.5);
     z-index: 10;
-    margin-top: 3em;
+    margin-top: 4em;
 
 
 }
@@ -88,6 +88,34 @@ input {
     font-size: large;
     border-top-right-radius: 10px;
     font-weight: bold;
+}
+
+textarea {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    padding: .5em;
+    width: 70%;
+    color: white;
+    border-top-left-radius: 10px;
+    font-size: large;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    height: 2.7em;
+}
+
+::selection {
+    background-color: rgb(92, 28, 225);
+
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.539);
+
+}
+
+textarea:focus {
+    outline: none;
+    background-color: rgba(74, 71, 71, 0.181);
 }
 
 input::placeholder {
@@ -107,6 +135,11 @@ input:focus {
     padding: 0.2em 1em 0.2em 1em;
     border-radius: 50px;
     font-weight: bold;
+    height: 2.5em;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contactBtn:active {
@@ -116,9 +149,32 @@ input:focus {
 
 }
 
+#contactBtn:disabled {
+    background-color: rgb(46, 8, 112);
+
+}
+
+.contact-loading {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    animation: rotate infinite 0.7s ease-in-out backwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 #contactBtn:focus {
-
-
     outline: none;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 40px;

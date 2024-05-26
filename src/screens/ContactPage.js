@@ -36,13 +36,13 @@ export default function ContactPage() {
                 errors={state.errors}
               />
               <input type="email" required name='email' placeholder='Email' />
-              <input type="text" required name='message' placeholder='Feedback' />
+              <textarea type="text" required name='message' placeholder='Message' />
               <ValidationError
                 prefix="Message"
                 field="message"
                 errors={state.errors}
               />
-              <button disabled={state.submitting} id='contactBtn' type='submit'>{"Send"}</button>
+              <button disabled={state.submitting ? true : false} id='contactBtn' type='submit'>{state.submitting ? <div className="contact-loading"></div> : "Send"}</button>
             </form>
           </div>
         }

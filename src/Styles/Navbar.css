@@ -12,6 +12,7 @@
         overflow-y: auto;
         overflow-x: hidden;
         color: rgba(255, 255, 255, 0.641);
+        transition: color 0.5s ease-in-out;
     }
 
     .iconContainer {
@@ -61,6 +62,9 @@
     .selectedBorder {
         color: white;
         text-shadow: 0 0 10px #fff;
+        transition: color 1s ease-in-out;
+        transition: scale 0.2s ease-out;
+
     }
 
     .mylogo {
@@ -143,8 +147,7 @@
         backdrop-filter: blur(39px);
         border-radius: 3px;
         color: rgba(255, 255, 255, 0.641);
-
-
+        transition: color 1s ease-in-out;
     }
 
     .themesContainer {
@@ -169,7 +172,10 @@
     }
 
     .selectedBorder {
+        transition: color 1s ease-in-out;
+
         color: white;
+        text-shadow: 0 0 10px #fff;
     }
 
     .icons {
