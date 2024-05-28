@@ -76,6 +76,25 @@ export default class HomePage extends Component {
                             </div>
                         </div>
 
+
+                        <div className="btn-container" style={{
+                            width: '100%',
+                            textAlign: 'center',
+                            paddingBottom: '2em'
+
+                        }}>
+                            <a id='resume' href='https://drive.google.com/file/d/1T7l4Xiv6JhRoQ9BizEzp1prZttkiSd6q/view?usp=sharing' target='_blank' style={{
+                                fontSize: "1.5rem",
+                                backgroundColor: "rgb(98, 42, 214)",
+                                padding: '.7em',
+                                borderRadius: '40px',
+                                fontWeight: 'bold',
+                                boxShadow : '0 0 50px 2px rgb(98, 42, 180)',
+                                
+                            }}>
+                                My Resume
+                            </a>
+                        </div>
                     </div >
                 </div >
 
