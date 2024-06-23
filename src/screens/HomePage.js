@@ -77,7 +77,7 @@ export default class HomePage extends Component {
                         </div>
 
 
-                        <div className="btn-container" style={{
+                        {/* <div className="btn-container" style={{
                             width: '100%',
                             textAlign: 'center',
                             paddingBottom: '2em'
@@ -94,7 +94,7 @@ export default class HomePage extends Component {
                             }}>
                                 My Resume
                             </a>
-                        </div>
+                        </div> */}
                     </div >
                 </div >
 
