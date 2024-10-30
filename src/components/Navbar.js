@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logoImg from '../Assets/logo-no-background.png'
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../services/Firebase';
+
 const Navbar = () => {
     const [selectedButton, setSelectedButton] = useState("home");
     const location = useLocation();
@@ -19,7 +20,7 @@ const Navbar = () => {
             setnotify(false)
         }
 
-    }, [location.pathname]);
+    }, [location.pathname, selectedButton]);
 
     useEffect(() => {
         fetchtext()

@@ -29,30 +29,43 @@ export default function ProjectPage() {
 
   return (
     <>
-      <div className="projectpagetitle">
-        <div id="titleText"><h1>Projects</h1></div>
-        <div className="projectDesc">
-          <h2> Check out my GitHub for live demos and source code of connected projects.</h2>
+      <div className="parentProject">
+        <div className="errorContainer">
+          <div className="errorMessage">
+            <div className="errorTitle">
+              Live Output not available
+            </div>
+            <div className="errorDesc">
+              Some projects are not live, mainly Mobile Apps or a project if it requires heavy backend maintainance.
+            </div>
+          </div>
+        </div>
+        <div className="projectpagetitle">
+
+          <div id="titleText"><h1>Projects</h1></div>
+          <div className="projectDesc">
+            <h2> Check out my GitHub for live demos and source code of connected projects.</h2>
+          </div>
+        </div>
+
+        <div className={loading ? "loadingContainer" : "projectContainer"}>
+          {loading
+            ? [...Array(6)].map((_, index) => <LoadingCard key={index} />)
+            : Repositories.map((ele) => (
+              <Card
+                key={ele.id}
+                projectId={ele.id}
+                title={ele.name}
+                body={ele.description}
+                liveOutputUrl={ele.homepage}
+                sourceCodeUrl={ele.html_url}
+              />
+            ))
+          }
+
+
         </div>
       </div>
-
-      {loading
-        ?
-        <div className="loadingContainer">
-          <LoadingCard />
-          <LoadingCard />
-          <LoadingCard />
-          <LoadingCard />
-          <LoadingCard />
-          <LoadingCard />
-        </div>
-        :
-        <div className="projectContainer">
-          {Repositories.map((ele) => (
-            <Card key={ele.id} projectId={ele.id} title={ele.name} body={ele.description} liveOutputUrl={ele.homepage} sourceCodeUrl={ele.html_url} />
-          ))}
-        </div>
-      }
     </>
   )
 }
