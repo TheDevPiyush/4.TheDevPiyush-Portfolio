@@ -48,10 +48,29 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2em;
-    padding: 2.5em 1em 3em 1em;
+    padding: 3.5em 1em 3em 1em;
     overflow-x: hidden;
     overflow-y: auto;
+    min-height: 70svh;
     position: relative;
+}
+
+.failedContainer {
+    background: rgb(92, 28, 225);
+    background: linear-gradient(145deg, rgba(176, 64, 229, 1) 100%, rgba(92, 28, 225, 1) 0%, );
+    width: 100%;
+    --mask:
+        radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    min-height: 70svh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bolder;
 }
 
 .loadingContainer {
@@ -102,6 +121,7 @@
 .errorTitle {
     font-size: xx-large;
 }
-.errorDesc{
+
+.errorDesc {
     font-size: larger;
 }

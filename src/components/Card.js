@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../Styles/card.css'
 export default function Card(props) {
+
+    const [isOutputURL, setIsOutputURL] = useState(false);
+
+    useEffect(() => {
+        if (props.liveOutputUrl) {
+            setIsOutputURL(true)
+        }
+    })
 
 
     const redirectToSourceCode = () => {
@@ -29,15 +37,22 @@ export default function Card(props) {
             </div>
 
             <div className="cardButtonContainer">
-                <button className="cardButton" onClick={() => { redirectToSourceCode(props.sourceCodeUrl, ) }}>
-                    Source Code
+                <button className="cardButton code-btn" onClick={redirectToSourceCode}>
+                    View Code <span> <i class="fa fa-code" aria-hidden="true"></i> </span>
                 </button>
-                <button className="cardButton" onClick={() => { redirectToLiveOutput(props.liveOutputUrl, props.title) }}>
-                    Live Output
-                </button>
+                {isOutputURL
+                    ?
+                    <button className="cardButton live-btn" onClick={redirectToLiveOutput}>
+                        View Live <span> <i class="fa fa-play" aria-hidden="true"></i> </span>
+                    </button>
+                    :
+                    <button disabled className="disable-btn">
+                        N/A
+                    </button>
+                }
             </div>
 
-            
+
 
         </div>
     )

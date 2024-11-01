@@ -49,7 +49,6 @@
 }
 
 .cardButton {
-    background: rgb(98, 42, 214);
     font-size: 1.1em;
     border-radius: 40px;
     cursor: pointer;
@@ -85,4 +84,43 @@
     outline: none;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 40px;
+}
+
+.disable-btn {
+    background: rgba(117, 70, 210, 0.341);
+    font-size: 1.1em;
+    border-radius: 40px;
+    cursor: not-allowed;
+    user-select: none;
+    padding: .68em 1em 0.68em 1em;
+    width: max-content;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.disable-btn:hover::after {
+    content: "Live View is not available for this project 🙁";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 5%;
+    backdrop-filter: blur(20px);
+    padding: 15px 10px 15px 10px;
+    z-index: 100;
+    background: rgba(90, 28, 225, 0.531);
+    border-radius: 2rem;
+    -webkit-box-shadow: 1px -1px 59px -11px rgba(0, 0, 0, 0.426);
+    -moz-box-shadow: 1px -1px 59px -11px rgba(0, 0, 0, 0.434);
+    box-shadow: 1px -1px 59px -11px rgba(0, 0, 0, 0.6);
+}
+
+.code-btn {
+    background: rgba(111, 58, 217, 0.802);
+
+}
+
+.live-btn {
+    background: rgb(106, 45, 230);
+    font-weight: bolder;
 }
