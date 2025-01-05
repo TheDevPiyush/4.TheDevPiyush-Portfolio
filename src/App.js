@@ -7,6 +7,7 @@ import ProjectPage from './screens/ProjectPage'
 import './App.css'
 import Error404 from './screens/Error404'
 import NotificationPage from './screens/NotificationPage'
+import './services/Firebase'
 export default class App extends Component {
 
     render() {
